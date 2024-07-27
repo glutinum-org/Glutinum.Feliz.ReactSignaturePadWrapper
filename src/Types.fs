@@ -1,5 +1,3 @@
-module Glutinum.Feliz.ReactSignaturePadWrapper.Types
+namespace Glutinum.Feliz.ReactSignaturePadWrapper
 
-// Put your types here
-
-let x = ""
+type ISignaturePadProperty = interface end

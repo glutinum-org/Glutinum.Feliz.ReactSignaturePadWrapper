@@ -1,8 +1,13 @@
 {
     "type": "module",
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^6.0.0",
         "@types/node": "^20.14.12",
         "@vitejs/plugin-react": "^4.3.0",
+        "postcss": "^8.4.40",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-signature-pad-wrapper": "^4.0.1",
         "vite": "^5.2.13"
     }
 }

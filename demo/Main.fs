@@ -1,3 +1,9 @@
-module Demo
+module Demo.Main
 
-printfn "Hello, from the demo!"
+open Browser.Dom
+open Feliz
+open Demo.App
+
+let root = document.getElementById "root"
+
+ReactDOM.createRoot(root).render (App())

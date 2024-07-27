@@ -5,6 +5,8 @@
   <ItemGroup>
     <PackageVersion Include="Fable.Core" Version="4.3.0" />
     <PackageVersion Include="Fable.Package.SDK" Version="0.1.0" />
+    <PackageVersion Include="Feliz" Version="2.8.0" />
     <PackageVersion Include="FSharp.Core" Version="5.0.2" />
+    <PackageVersion Include="Glutinum.SignaturePad" Version="0.1.0" />
   </ItemGroup>
 </Project>

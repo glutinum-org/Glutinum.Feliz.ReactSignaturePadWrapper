@@ -4,10 +4,15 @@
         <TargetFramework>netstandard2.1</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="Glutinum.Feliz.ReactSignaturePadWrapper.fs" />
+        <Compile Include="Types.fs" />
+        <Compile Include="Interop.fs" />
+        <Compile Include="ReactSignaturePadWrapper.fs" />
+        <Compile Include="Exports.fs" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Fable.Core" />
         <PackageReference Include="Fable.Package.SDK" />
+        <PackageReference Include="Feliz" />
+        <PackageReference Include="Glutinum.SignaturePad" />
     </ItemGroup>
 </Project>

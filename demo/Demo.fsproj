@@ -5,6 +5,8 @@
     <DefineConstants>FABLE_COMPILER</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Extensions/Feliz.fs" />
+    <Compile Include="App.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
   <ItemGroup>
@@ -12,5 +14,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Fable.Core" />
+    <PackageReference Include="Feliz" />
   </ItemGroup>
 </Project>
