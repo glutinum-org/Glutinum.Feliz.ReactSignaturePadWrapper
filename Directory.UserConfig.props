@@ -5,7 +5,7 @@
             Learn more about FablePackageType and PackageTags
             at https://github.com/fable-compiler/Fable.Package.SDK
         -->
-        <FablePackageType>binding</FablePackageType>
+        <FablePackageType>library</FablePackageType>
         <PackageTags>fable-javascript</PackageTags>
         <!-- Example of PackageProjectUrl: https://github.com/fable-compiler/Fable.Package.SDK -->
         <PackageProjectUrl>https://github.com/glutinum-org/Glutinum.Feliz.ReactSignaturePadWrapper</PackageProjectUrl>
