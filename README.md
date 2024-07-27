@@ -11,4 +11,41 @@
 
 <!-- You can put the documentation for your binding below -->
 
+Binding for [react-signature-pad-wrapper](https://www.npmjs.com/package/react-signature-pad-wrapper).
+
 ## Usage
+
+```fs
+open Feliz
+open Glutinum.SignaturePad
+open Glutinum.Feliz.ReactSignaturePadWrapper
+
+open type Glutinum.Feliz.ReactSignaturePadWrapper.Exports
+
+[<ReactComponent>]
+let App () =
+    let signaturePadRef = React.useRef<SignaturePad option> None
+
+    Html.div [
+        SignaturePad [
+            signaturePad.ref signaturePadRef
+            signaturePad.redrawOnResize true
+        ]
+
+        Html.button [
+            prop.text "Clear"
+            prop.onClick (fun _ ->
+                if signaturePadRef.current.IsSome then
+                    signaturePadRef.current.Value.clear ()
+            )
+        ]
+        Html.button [
+            prop.text "Save"
+            prop.onClick (fun _ ->
+                if signaturePadRef.current.IsSome then
+                    let base64URL = signaturePadRef.current.Value.toDataURL ()
+                    debugBase64 base64URL
+            )
+        ]
+    ]
+```
