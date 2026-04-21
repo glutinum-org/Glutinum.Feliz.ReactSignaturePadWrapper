@@ -5,6 +5,7 @@ open SimpleExec
 open EasyBuild.Workspace
 open EasyBuild.Commands.Demo
 open BlackFox.CommandLine
+open EasyBuild.Tools.GhPages
 
 type PublishSettings() =
     inherit CommandSettings()
@@ -21,12 +22,8 @@ type PublishCommand() =
         if not settings.SkipBuild then
             DemoCommand().Execute(context, DemoSettings()) |> ignore
 
-        Command.Run(
-            "npx",
-            CmdLine.empty
-            |> CmdLine.appendRaw "gh-pages"
-            |> CmdLine.appendPrefix "-d" VirtualWorkspace.demo.dist.``.``
-            |> CmdLine.toString
+        GhPages.run(
+            dist = VirtualWorkspace.demo.dist.``.``
         )
 
         0

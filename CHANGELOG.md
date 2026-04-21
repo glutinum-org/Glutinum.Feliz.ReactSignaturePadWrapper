@@ -1,12 +1,12 @@
+---
+last_commit_released: b029314335c513467255deac2f2b12cafb9baa8e
+---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-<!-- EasyBuild: START -->
-<!-- last_commit_released: b029314335c513467255deac2f2b12cafb9baa8e -->
-<!-- EasyBuild: END -->
 
 ## 1.0.2
 
