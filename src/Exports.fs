@@ -8,7 +8,7 @@ open Fable.Core.JsInterop
 type Exports =
 
     static member inline SignaturePad(properties: #ISignaturePadProperty list) =
-        Interop.reactApi.createElement (
-            import "default" "react-signature-pad-wrapper",
+        ReactLegacy.createElement (
+            unbox<ReactElement> (import "default" "react-signature-pad-wrapper"),
             createObj !!properties
         )

@@ -6,8 +6,8 @@ open Feliz
 module Extensions =
 
     type Html with
-        static member inline hgroup xs = Interop.createElement "hgroup" xs
-        static member inline hgroup (children: #seq<ReactElement>) = Interop.reactElementWithChildren "hgroup" children
+        static member inline hgroup (xs: ReactElement) = ReactLegacy.createElement("hgroup", xs)
+        static member inline hgroup (children: seq<ReactElement>) = ReactLegacy.createElement("hgroup", children)
 
     type prop with
 

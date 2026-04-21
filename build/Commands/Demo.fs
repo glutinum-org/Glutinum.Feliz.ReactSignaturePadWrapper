@@ -26,7 +26,6 @@ type DemoCommand() =
                         |> CmdLine.appendRaw "fable"
                         |> CmdLine.appendRaw "watch"
                         |> CmdLine.appendRaw Workspace.demo.``.``
-                        |> CmdLine.appendRaw "--test:MSBuildCracker"
                         |> CmdLine.appendRaw "--verbose"
                         |> CmdLine.toString
                     )
@@ -44,7 +43,6 @@ type DemoCommand() =
                 CmdLine.empty
                 |> CmdLine.appendRaw "fable"
                 |> CmdLine.appendRaw Workspace.demo.``.``
-                |> CmdLine.appendRaw "--test:MSBuildCracker"
                 |> CmdLine.toString
             )
 
